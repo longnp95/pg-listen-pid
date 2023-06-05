@@ -1,10 +1,10 @@
 {
-  "name": "pg-listen",
+  "name": "pg-listen-pid",
   "version": "1.7.0",
   "license": "MIT",
-  "description": "PostgreSQL LISTEN &  NOTIFY that finally works.",
-  "author": "Andy Wermke (https://github.com/andywer)",
-  "repository": "github:andywer/pg-listen",
+  "description": "pg-listen fork that exposes postgres processId",
+  "author": "Long Ngo (https://github.com/longnp95)",
+  "repository": "github:longnp95/pg-listen-pid",
   "main": "./index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {

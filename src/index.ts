@@ -216,7 +216,7 @@ function createPostgresSubscriber<Events extends Record<string, any> = { [channe
   notificationsEmitter.setMaxListeners(0)   // unlimited listeners
 
   emitter.on("notification", (notification: PgParsedNotification) => {
-    notificationsEmitter.emit<any>(notification.channel, notification.payload)
+    notificationsEmitter.emit<any>(notification.channel, notification.payload, notification.processId)
   })
 
   const { dbClient: initialDBClient, reconnect } = connect(connectionConfig, emitter, options)
